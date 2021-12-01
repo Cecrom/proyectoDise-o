@@ -1,0 +1,237 @@
+/* Importaciones */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand&family=Shrikhand&display=swap');
+
+/* Ajuste general */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #DFA54C;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Shrikhand';
+}
+
+h2, h3 {
+    font-family: 'Quicksand';
+}
+
+p, a {
+    font-family: 'Poppins';
+    color: #000000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Cabecera */
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+}
+
+#hamburguesa {
+    display: block;
+    font-size: 3rem;
+    padding-right: 1rem;
+}
+
+.logo {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 4rem;
+}
+
+.logo img {
+    object-fit: contain;
+}
+
+.cuentaCarrito {
+    display: flex;
+}
+
+.cuentaCarrito span {
+    font-size: 3rem;
+    padding: 1rem;
+    color: #03989E;
+}
+
+.listaNav {
+    display: none;
+}
+
+/* Bloque imágenes */
+
+.imgDesc {
+    display: flex;
+    flex-direction: column;
+}
+
+.descrCortaComp {
+    margin: 1rem;
+    border-style: outset;
+    border-color: black;
+    border-radius: 1rem;
+    background-color: #03989E;
+    color: black;
+    padding: 1rem;
+}
+
+.descrCortaComp h1 {
+    font-size: x-large;
+}
+
+.compra {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.compra input {
+    height: 1.3rem;
+    width: 4rem;
+}
+
+.compra button {
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.gridImagenes {
+    padding-left: 2rem;
+    display: grid;
+    flex-basis: 30%;
+    margin: 1rem 1rem 1rem -1rem;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto auto;
+    flex-grow: 1;
+    grid-gap: 1rem;
+}
+
+.imagenPrin {
+    max-width: 100%;
+    max-height: 100%;
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.imagenPrin img {
+    border-style: outset;
+    border-color: #03989E;
+    border-radius: 1rem;
+}
+
+.miniaturas {
+    max-width: 100%;
+    max-height: 100%;
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.miniaturas img {
+    border-style: outset;
+    border-color: #03989E;
+    border-radius: 1rem;
+}
+
+#mini1 {
+    align-self: flex-start;
+}
+
+#mini3 {
+    align-self: flex-end;
+}
+
+/* Descripción larga */
+
+.informacionAmpliada {
+    display: flex;
+    flex-direction: column;
+}
+
+.descrLarga {
+    order: 1;
+    margin: 0.7rem;
+    border-style: outset;
+    border-color: black;
+    border-radius: 1rem;
+    background-color: #03989E;
+    color: black;
+}
+
+.descrLarga p, h2{
+    padding: 0.3rem;
+}
+
+.divVideo {
+    order: 2;
+    margin: 0.7rem;
+}
+
+.video {
+    max-width: 100%;
+}
+
+.audio {
+    order: 3;
+    margin: 0.3rem;
+}
+
+.audio audio{
+    max-width: 100%;
+}
+
+/* Footer */
+
+footer{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.columnas{
+    margin: 1rem;
+    text-align: center;
+}
+
+.columnas span{
+    color: #03989E;
+}
